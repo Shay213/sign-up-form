@@ -8,3 +8,128 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.main-container{
+    height: 100vh;
+    display: flex;
+}
+
+.logo-side{
+    background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    position: relative;
+    flex: 0 1 420px;
+}
+
+.logo{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25%;
+}
+
+.logo h1{
+    font-family: norse;
+    font-size: 70px;
+    color: white;
+}
+
+.img-creator{
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+}
+
+.img-creator p{
+    color: white;
+}
+
+.img-creator a{
+    color: white;
+}
+
+.content-container{
+    flex: 1;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    flex: 1;
+    padding-left: 40px;
+    position: relative;
+}
+
+.form-container{
+    flex: 0 1 300px;
+    background-color: white;
+    box-shadow: 0px 1px 2px #888, 0px -1px 3px #888;
+    padding-left: 40px;
+}
+
+.create-acc-container{
+    flex: 1;
+    padding-left: 40px;
+}
+
+.header-text{
+    position: absolute;
+    bottom: 30px;
+}
+
+.header-text p{
+    font-size: 20px;
+    word-wrap: break-word; 
+    max-width: 55ch;
+}
+
+.form-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-container li{
+    display: flex;
+    gap: 50px;
+    margin: 25px 0;
+}
+
+.form-container label{
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.form-container input{
+    padding: 5px 0 5px 10px;
+    font-size: 13px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+}
+
+.create-acc-container button{
+    margin: 30px 0 10px 0;
+    padding: 13px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.create-acc-container a{
+    text-decoration: none;
+    color: #596D48;
+}

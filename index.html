@@ -11,7 +11,7 @@
     <div class="main-container">
         <div class="logo-side">
             <div class="logo">
-                <img src="./img/odin.png" alt="odin-logo">
+                <img src="./img/odin.png" alt="odin-logo" height="80px" width="70px">
                 <h1>ODIN</h1>
             </div>
             <div class="img-creator">
@@ -23,35 +23,53 @@
         </div>
         <div class="content-container">
             <div class="header">
-                <p></p>
+                <div class="header-text">
+                    <p>This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.
+                        Sign up now to get started 
+                    </p>
+                    <p>You know you want to.</p>
+                </div>
             </div>
             <div class="form-container">
-                <form action="example.com/path">
+                <form action="example.com/path" id="form1">
                     <h2>Let's do this</h2>
                     <ul>
                         <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" required>
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" required>
+                            <div>
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div>
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" required>
+                            </div>
                         </li>
                         <li>
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" autocomplete="email" required>
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" autocomplete="tel" required>
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" autocomplete="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" autocomplete="tel" required>
+                            </div>    
                         </li>
                         <li>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" required>
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" required>
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" required>
+                            </div>
+                            <div>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" required>
+                            </div>
                         </li>
                     </ul>
                 </form>
             </div>
             <div class="create-acc-container">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="form1">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
