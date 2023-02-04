@@ -133,3 +133,23 @@ body{
     text-decoration: none;
     color: #596D48;
 }
+
+.form-container input:focus{
+    outline: none;
+    border: 1px solid rgb(92, 92, 92);
+    box-shadow: 0 0 5px #9b9b9b;
+}
+
+.form-container div.success input{
+    border-color: #09c372;
+}
+
+.form-container div.error input{
+    border-color: #ff3860;
+}
+
+.form-container .error-txt{
+    color: #ff3860;
+    font-size: 12px;
+    margin-top: 4px;
+}

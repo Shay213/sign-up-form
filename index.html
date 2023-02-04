@@ -39,30 +39,36 @@
                             <div>
                                 <label for="first-name">FIRST NAME</label>
                                 <input type="text" id="first-name" required>
+                                <div class="error-txt"></div>
                             </div>
                             <div>
                                 <label for="last-name">LAST NAME</label>
                                 <input type="text" id="last-name" required>
+                                <div class="error-txt"></div>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <label for="email">EMAIL</label>
                                 <input type="email" id="email" autocomplete="email" required>
+                                <div class="error-txt"></div>
                             </div>
                             <div>
                                 <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" autocomplete="tel" required>
+                                <input type="tel" id="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" required>
+                                <div class="error-txt"></div>
                             </div>    
                         </li>
                         <li>
                             <div>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" required>
+                                <input type="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                                <div class="error-txt"></div>
                             </div>
                             <div>
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password" required>
+                                <label for="password2">CONFIRM PASSWORD</label>
+                                <input type="password" id="password2" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"required>
+                                <div class="error-txt"></div>
                             </div>
                         </li>
                     </ul>
